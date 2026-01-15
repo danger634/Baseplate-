@@ -128,7 +128,7 @@ local Tab = Window:Tab({
 })
 
 local Button = Tab:Button({
-    Title = "Black hat",
+    Title = "Horn Fire",
     Color = Color3.fromHex("#a2ff30"), -- paint the button
     Justify = "Center", -- align items in the center (Center or Between or Left or Right)
     IconAlign = "Left", -- Left or Right of the text
@@ -325,7 +325,7 @@ end)
 })
 
 local Button = Tab:Button({
-    Title = "black hat",
+    Title = "Alien",
     Color = Color3.fromHex("#a2ff30"), -- paint the button
     Justify = "Center", -- align items in the center (Center or Between or Left or Right)
     IconAlign = "Left", -- Left or Right of the text
@@ -522,7 +522,7 @@ end)
 })
 
 local Button = Tab:Button({
-    Title = "Alien",
+    Title = "black hat",
     Color = Color3.fromHex("#a2ff30"), -- paint the button
     Justify = "Center", -- align items in the center (Center or Between or Left or Right)
     IconAlign = "Left", -- Left or Right of the text
@@ -718,6 +718,599 @@ end)
     end
 })
 
+local Button = Tab:Button({
+    Title = "Pumpkin",
+    Color = Color3.fromHex("#a2ff30"), -- paint the button
+    Justify = "Center", -- align items in the center (Center or Between or Left or Right)
+    IconAlign = "Left", -- Left or Right of the text
+    Icon = "hand", -- removing icon
+    Callback = function()
+        -- ...
+
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 15316834620, 15316834620, 15316834620, 15316834620, 15316834620, , 15316834620, 15316834620, 15316834620, 15316834620, 15316834620, 15316834620, 15316834620, 15316834620, 15316834620")
+wait(2)
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-net")
+
+local plr = game.Players.LocalPlayer;
+local chr = plr.Character;
+local hum = chr.Humanoid;
+local mov = {};
+local mov2 = {};
+
+
+
+function ftp(str)
+    local pt = {};
+    if str ~= 'me' and str ~= 'random' then
+        for i, v in pairs(game.Players:GetPlayers()) do
+            if v.Name:lower():find(str:lower()) then
+                table.insert(pt, v);
+            end
+        end
+    elseif str == 'me' then
+        table.insert(pt, plr);
+	elseif str == 'random' then
+		table.insert(pt, game.Players:GetPlayers()[math.random(1, #game.Players:GetPlayers())]);
+    end
+    return pt;
+end
+
+if not game:GetService("ReplicatedStorage"):FindFirstChild("01_server") then local a=game:GetService("CollectionService")local b={}b["ScreenGui_1"]=Instance.new("ScreenGui",game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))b["ScreenGui_1"].IgnoreGuiInset=true b["ScreenGui_1"].ScreenInsets=Enum.ScreenInsets.DeviceSafeInsets b["ScreenGui_1"].ZIndexBehavior=Enum.ZIndexBehavior.Sibling a:AddTag(b["ScreenGui_1"],"main")b["Frame_2"]=Instance.new("Frame",b["ScreenGui_1"])b["Frame_2"].BorderSizePixel=0 b["Frame_2"].BackgroundColor3=Color3.fromRGB(0,0,0)b["Frame_2"].AnchorPoint=Vector2.new(.5,.5)b["Frame_2"].Size=UDim2.new(.36316,0,.46667,0)b["Frame_2"].Position=UDim2.new(.5,0,.5,0)b["Frame_2"].BackgroundTransparency=.5 b["UICorner_3"]=Instance.new("UICorner",b["Frame_2"])b["UICorner_3"].CornerRadius=UDim.new(.04,0)b["TextLabel_4"]=Instance.new("TextLabel",b["Frame_2"])b["TextLabel_4"].TextWrapped=true b["TextLabel_4"].BorderSizePixel=0 b["TextLabel_4"].TextScaled=true b["TextLabel_4"].BackgroundColor3=Color3.fromRGB(255,255,255)b["TextLabel_4"].TextColor3=Color3.fromRGB(255,255,255)b["TextLabel_4"].BackgroundTransparency=1 b["TextLabel_4"].Size=UDim2.new(.81159,0,.32143,0)b["TextLabel_4"].Text="You are in the wrong game, please copy the link below and enter the game. (game: Just a baseplate., game creator: dreammazestudio/ the local maze)"b["TextLabel_4"].Position=UDim2.new(.0942,0,.13095,0)b["TextBox_5"]=Instance.new("TextBox",b["Frame_2"])b["TextBox_5"].CursorPosition=-1 b["TextBox_5"].BorderSizePixel=0 b["TextBox_5"].BackgroundColor3=Color3.fromRGB(255,255,255)b["TextBox_5"].ClearTextOnFocus=false b["TextBox_5"].Size=UDim2.new(.81159,0,.29762,0)b["TextBox_5"].Position=UDim2.new(.1087,0,.5119,0)b["TextBox_5"].Text="https://www.roblox.com/games/123974602339071/UP-Just-a-baseplate"b["TextBox_5"].TextScaled=true b["UIAspectRatioConstraint_6"]=Instance.new("UIAspectRatioConstraint",b["Frame_2"])b["UIAspectRatioConstraint_6"].AspectRatio=1.64286 game:GetService("TeleportService"):Teleport(123974602339071,game:GetService("Players").LocalPlayer)return b["ScreenGui_1"],require end
+
+for _, v in pairs(hum:GetAccessories()) do
+	local b = v.Handle;
+	b.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0);
+	b.CanCollide = false;
+	b:BreakJoints();
+	for _, k in pairs(v:GetChildren()) do
+		if not k:IsA'SpecialMesh' and not k:IsA'Part' then
+			k:Destroy();
+		end
+	end
+	local still = Instance.new('BodyAngularVelocity', b);
+	still.MaxTorque = Vector3.new(math.huge, math.huge, math.huge);
+	still.AngularVelocity = Vector3.new(0, 0, 0);
+	local align = Instance.new('AlignPosition', b);
+	align.MaxForce = 1000000;
+	align.MaxVelocity = math.huge;
+	align.RigidityEnabled = false;
+	align.ApplyAtCenterOfMass = true;
+	align.Responsiveness = 200;
+	local a0 = Instance.new('Attachment', b);
+	local a1 = Instance.new('Attachment', chr.Head);
+	align.Attachment0 = a0;
+	align.Attachment1 = a1;
+	table.insert(mov, a1);
+	table.insert(mov2, still);
+end
+
+local par = {};
+for _, v in pairs(mov) do
+	local parr = Instance.new('Part', workspace);
+	parr.Anchored = true;
+	parr.Size = Vector3.new(1, 1, 1);
+	parr.Transparency = 1;
+	parr.CanCollide = false;
+	table.insert(par, parr);
+end
+
+local rotx = 0;
+local rotz = math.pi / 2;
+local height = 0;
+local heighti = 1;
+local offset = 10;
+local speed = 0.5;
+local mode = 4;
+local angular = Vector3.new(0, 0, 0);
+local l = 1;
+game['Run Service'].RenderStepped:Connect(function()
+	rotx = rotx + speed / 100;
+	rotz = rotz + speed / 100;
+	l = (l >= 360 and 1 or l + speed);
+	
+	for i, v in pairs(par) do
+		v.CFrame = CFrame.new(chr.HumanoidRootPart.Position) * CFrame.fromEulerAnglesXYZ(0, math.rad(l + (360 / #par) * i + speed), 0) * CFrame.new(offset, 0, 0);
+	end
+	
+	if heighti == 1 then
+		height = height + speed / 100;
+	elseif heighti == 2 then
+		height = height - speed / 100;
+	end
+	if height > 2 then
+		heighti = 2;
+	end
+	if height < -1 then
+		heighti = 1;
+	end
+	
+	if mode == 1 then
+		for _, v in pairs(mov) do
+			v.Position = Vector3.new(math.sin(rotx) * offset, 0, math.sin(rotz) * offset);
+		end
+	elseif mode == 2 then
+		for _, v in pairs(mov) do
+			v.Position = Vector3.new(offset, height, offset);
+		end
+	elseif mode == 3 then
+		for _, v in pairs(mov) do
+			v.Position = Vector3.new(math.sin(rotx) * offset, height, math.sin(rotz) * offset);
+		end
+	elseif mode == 4 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	elseif mode == 5 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new((math.sin(rotx)) * offset, height, (math.cos(rotz) - i) * offset);
+		end
+	elseif mode == 6 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new((math.sin(rotx)) * offset, height, (math.tan(rotz) - i) * offset);
+		end
+	elseif mode == 7 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(math.cos(rotx * i) * offset, 0, math.cos(rotz * i) * offset);
+		end
+	elseif mode == 8 then
+	    for i, v in pairs(mov) do
+			v.Position = Vector3.new(math.sin(rotx) * i * offset, 0, math.sin(rotz) * i * offset);
+		end
+	elseif mode == 9 then
+		pcall(function()
+			local so = nil;
+			for k, b in pairs(chr:GetChildren()) do
+				if b:IsA'Tool' then
+					for h, j in pairs(b:GetDescendants()) do
+						if j:IsA'Sound' then
+							so = j;
+						end
+					end
+				end
+			end
+			if so ~= nil then
+				offset = so.PlaybackLoudness / 35;
+				speed = so.PlaybackLoudness / 500;
+				angular = Vector3.new(0, so.PlaybackLoudness / 75, 0);
+			end
+		end)
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	elseif mode == 10 then
+		offset = height * 15;
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	elseif mode == 11 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).Z) + Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	end
+	for _, v in pairs(mov2) do
+		v.AngularVelocity = angular;
+	end
+end)
+game.Players.LocalPlayer.Chatted:Connect(function(c)
+	if c:split(' ')[1] == '.orbit' then
+		for _, v in pairs(mov) do
+			chr = ftp(c:split(' ')[2])[1].Character;
+			v.Parent = ftp(c:split(' ')[2])[1].Character.HumanoidRootPart;
+		end
+	end
+	if c:split(' ')[1] == '.speed' then
+		speed = tonumber(c:split(' ')[2]);
+	end
+	if c:split(' ')[1] == '.mode' then
+		mode = tonumber(c:split(' ')[2]);
+	end
+	if c:split(' ')[1] == '.offset' then
+		offset = tonumber(c:split(' ')[2]);
+	end
+	if c:split(' ')[1] == '.angular' then
+		angular = Vector3.new(tonumber(c:split(' ')[2]), tonumber(c:split(' ')[3]), tonumber(c:split(' ')[4]));
+	end
+end) 
+
+    end
+})
+
+local Button = Tab:Button({
+    Title = "Hot Chip",
+    Color = Color3.fromHex("#a2ff30"), -- paint the button
+    Justify = "Center", -- align items in the center (Center or Between or Left or Right)
+    IconAlign = "Left", -- Left or Right of the text
+    Icon = "hand", -- removing icon
+    Callback = function()
+        -- ...
+
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh , 15316834620, 15316834620, 15316834620, 15316834620, 15316834620, 15316834620, 15316834620")
+wait(1)
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh , 15316834620, 15316834620, 15316834620, 15316834620, 15316834620, 15316834620, 15316834620, 15316834620")
+wait(2)
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-net")
+
+local plr = game.Players.LocalPlayer;
+local chr = plr.Character;
+local hum = chr.Humanoid;
+local mov = {};
+local mov2 = {};
+
+
+
+function ftp(str)
+    local pt = {};
+    if str ~= 'me' and str ~= 'random' then
+        for i, v in pairs(game.Players:GetPlayers()) do
+            if v.Name:lower():find(str:lower()) then
+                table.insert(pt, v);
+            end
+        end
+    elseif str == 'me' then
+        table.insert(pt, plr);
+	elseif str == 'random' then
+		table.insert(pt, game.Players:GetPlayers()[math.random(1, #game.Players:GetPlayers())]);
+    end
+    return pt;
+end
+
+if not game:GetService("ReplicatedStorage"):FindFirstChild("01_server") then local a=game:GetService("CollectionService")local b={}b["ScreenGui_1"]=Instance.new("ScreenGui",game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))b["ScreenGui_1"].IgnoreGuiInset=true b["ScreenGui_1"].ScreenInsets=Enum.ScreenInsets.DeviceSafeInsets b["ScreenGui_1"].ZIndexBehavior=Enum.ZIndexBehavior.Sibling a:AddTag(b["ScreenGui_1"],"main")b["Frame_2"]=Instance.new("Frame",b["ScreenGui_1"])b["Frame_2"].BorderSizePixel=0 b["Frame_2"].BackgroundColor3=Color3.fromRGB(0,0,0)b["Frame_2"].AnchorPoint=Vector2.new(.5,.5)b["Frame_2"].Size=UDim2.new(.36316,0,.46667,0)b["Frame_2"].Position=UDim2.new(.5,0,.5,0)b["Frame_2"].BackgroundTransparency=.5 b["UICorner_3"]=Instance.new("UICorner",b["Frame_2"])b["UICorner_3"].CornerRadius=UDim.new(.04,0)b["TextLabel_4"]=Instance.new("TextLabel",b["Frame_2"])b["TextLabel_4"].TextWrapped=true b["TextLabel_4"].BorderSizePixel=0 b["TextLabel_4"].TextScaled=true b["TextLabel_4"].BackgroundColor3=Color3.fromRGB(255,255,255)b["TextLabel_4"].TextColor3=Color3.fromRGB(255,255,255)b["TextLabel_4"].BackgroundTransparency=1 b["TextLabel_4"].Size=UDim2.new(.81159,0,.32143,0)b["TextLabel_4"].Text="You are in the wrong game, please copy the link below and enter the game. (game: Just a baseplate., game creator: dreammazestudio/ the local maze)"b["TextLabel_4"].Position=UDim2.new(.0942,0,.13095,0)b["TextBox_5"]=Instance.new("TextBox",b["Frame_2"])b["TextBox_5"].CursorPosition=-1 b["TextBox_5"].BorderSizePixel=0 b["TextBox_5"].BackgroundColor3=Color3.fromRGB(255,255,255)b["TextBox_5"].ClearTextOnFocus=false b["TextBox_5"].Size=UDim2.new(.81159,0,.29762,0)b["TextBox_5"].Position=UDim2.new(.1087,0,.5119,0)b["TextBox_5"].Text="https://www.roblox.com/games/123974602339071/UP-Just-a-baseplate"b["TextBox_5"].TextScaled=true b["UIAspectRatioConstraint_6"]=Instance.new("UIAspectRatioConstraint",b["Frame_2"])b["UIAspectRatioConstraint_6"].AspectRatio=1.64286 game:GetService("TeleportService"):Teleport(123974602339071,game:GetService("Players").LocalPlayer)return b["ScreenGui_1"],require end
+
+for _, v in pairs(hum:GetAccessories()) do
+	local b = v.Handle;
+	b.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0);
+	b.CanCollide = false;
+	b:BreakJoints();
+	for _, k in pairs(v:GetChildren()) do
+		if not k:IsA'SpecialMesh' and not k:IsA'Part' then
+			k:Destroy();
+		end
+	end
+	local still = Instance.new('BodyAngularVelocity', b);
+	still.MaxTorque = Vector3.new(math.huge, math.huge, math.huge);
+	still.AngularVelocity = Vector3.new(0, 0, 0);
+	local align = Instance.new('AlignPosition', b);
+	align.MaxForce = 1000000;
+	align.MaxVelocity = math.huge;
+	align.RigidityEnabled = false;
+	align.ApplyAtCenterOfMass = true;
+	align.Responsiveness = 200;
+	local a0 = Instance.new('Attachment', b);
+	local a1 = Instance.new('Attachment', chr.Head);
+	align.Attachment0 = a0;
+	align.Attachment1 = a1;
+	table.insert(mov, a1);
+	table.insert(mov2, still);
+end
+
+local par = {};
+for _, v in pairs(mov) do
+	local parr = Instance.new('Part', workspace);
+	parr.Anchored = true;
+	parr.Size = Vector3.new(1, 1, 1);
+	parr.Transparency = 1;
+	parr.CanCollide = false;
+	table.insert(par, parr);
+end
+
+local rotx = 0;
+local rotz = math.pi / 2;
+local height = 0;
+local heighti = 1;
+local offset = 10;
+local speed = 0.5;
+local mode = 4;
+local angular = Vector3.new(0, 0, 0);
+local l = 1;
+game['Run Service'].RenderStepped:Connect(function()
+	rotx = rotx + speed / 100;
+	rotz = rotz + speed / 100;
+	l = (l >= 360 and 1 or l + speed);
+	
+	for i, v in pairs(par) do
+		v.CFrame = CFrame.new(chr.HumanoidRootPart.Position) * CFrame.fromEulerAnglesXYZ(0, math.rad(l + (360 / #par) * i + speed), 0) * CFrame.new(offset, 0, 0);
+	end
+	
+	if heighti == 1 then
+		height = height + speed / 100;
+	elseif heighti == 2 then
+		height = height - speed / 100;
+	end
+	if height > 2 then
+		heighti = 2;
+	end
+	if height < -1 then
+		heighti = 1;
+	end
+	
+	if mode == 1 then
+		for _, v in pairs(mov) do
+			v.Position = Vector3.new(math.sin(rotx) * offset, 0, math.sin(rotz) * offset);
+		end
+	elseif mode == 2 then
+		for _, v in pairs(mov) do
+			v.Position = Vector3.new(offset, height, offset);
+		end
+	elseif mode == 3 then
+		for _, v in pairs(mov) do
+			v.Position = Vector3.new(math.sin(rotx) * offset, height, math.sin(rotz) * offset);
+		end
+	elseif mode == 4 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	elseif mode == 5 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new((math.sin(rotx)) * offset, height, (math.cos(rotz) - i) * offset);
+		end
+	elseif mode == 6 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new((math.sin(rotx)) * offset, height, (math.tan(rotz) - i) * offset);
+		end
+	elseif mode == 7 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(math.cos(rotx * i) * offset, 0, math.cos(rotz * i) * offset);
+		end
+	elseif mode == 8 then
+	    for i, v in pairs(mov) do
+			v.Position = Vector3.new(math.sin(rotx) * i * offset, 0, math.sin(rotz) * i * offset);
+		end
+	elseif mode == 9 then
+		pcall(function()
+			local so = nil;
+			for k, b in pairs(chr:GetChildren()) do
+				if b:IsA'Tool' then
+					for h, j in pairs(b:GetDescendants()) do
+						if j:IsA'Sound' then
+							so = j;
+						end
+					end
+				end
+			end
+			if so ~= nil then
+				offset = so.PlaybackLoudness / 35;
+				speed = so.PlaybackLoudness / 500;
+				angular = Vector3.new(0, so.PlaybackLoudness / 75, 0);
+			end
+		end)
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	elseif mode == 10 then
+		offset = height * 15;
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	elseif mode == 11 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).Z) + Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	end
+	for _, v in pairs(mov2) do
+		v.AngularVelocity = angular;
+	end
+end)
+game.Players.LocalPlayer.Chatted:Connect(function(c)
+	if c:split(' ')[1] == '.orbit' then
+		for _, v in pairs(mov) do
+			chr = ftp(c:split(' ')[2])[1].Character;
+			v.Parent = ftp(c:split(' ')[2])[1].Character.HumanoidRootPart;
+		end
+	end
+	if c:split(' ')[1] == '.speed' then
+		speed = tonumber(c:split(' ')[2]);
+	end
+	if c:split(' ')[1] == '.mode' then
+		mode = tonumber(c:split(' ')[2]);
+	end
+	if c:split(' ')[1] == '.offset' then
+		offset = tonumber(c:split(' ')[2]);
+	end
+	if c:split(' ')[1] == '.angular' then
+		angular = Vector3.new(tonumber(c:split(' ')[2]), tonumber(c:split(' ')[3]), tonumber(c:split(' ')[4]));
+	end
+end) 
+
+    end
+})
+
+local Button = Tab:Button({
+    Title = "Hot Chip",
+    Color = Color3.fromHex("#a2ff30"), -- paint the button
+    Justify = "Center", -- align items in the center (Center or Between or Left or Right)
+    IconAlign = "Left", -- Left or Right of the text
+    Icon = "", -- removing icon
+    Callback = function()
+        -- ...
+
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 8151398197, 8151398197, 8151398197, 8151398197, 8151398197, 8151398197, 8151398197, 8151398197, 8151398197, 8151398197, 8151398197, 8151398197, 8151398197, 8151398197, 8151398197")
+wait(2)
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-net")
+
+local plr = game.Players.LocalPlayer;
+local chr = plr.Character;
+local hum = chr.Humanoid;
+local mov = {};
+local mov2 = {};
+
+
+
+function ftp(str)
+    local pt = {};
+    if str ~= 'me' and str ~= 'random' then
+        for i, v in pairs(game.Players:GetPlayers()) do
+            if v.Name:lower():find(str:lower()) then
+                table.insert(pt, v);
+            end
+        end
+    elseif str == 'me' then
+        table.insert(pt, plr);
+	elseif str == 'random' then
+		table.insert(pt, game.Players:GetPlayers()[math.random(1, #game.Players:GetPlayers())]);
+    end
+    return pt;
+end
+
+if not game:GetService("ReplicatedStorage"):FindFirstChild("01_server") then local a=game:GetService("CollectionService")local b={}b["ScreenGui_1"]=Instance.new("ScreenGui",game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))b["ScreenGui_1"].IgnoreGuiInset=true b["ScreenGui_1"].ScreenInsets=Enum.ScreenInsets.DeviceSafeInsets b["ScreenGui_1"].ZIndexBehavior=Enum.ZIndexBehavior.Sibling a:AddTag(b["ScreenGui_1"],"main")b["Frame_2"]=Instance.new("Frame",b["ScreenGui_1"])b["Frame_2"].BorderSizePixel=0 b["Frame_2"].BackgroundColor3=Color3.fromRGB(0,0,0)b["Frame_2"].AnchorPoint=Vector2.new(.5,.5)b["Frame_2"].Size=UDim2.new(.36316,0,.46667,0)b["Frame_2"].Position=UDim2.new(.5,0,.5,0)b["Frame_2"].BackgroundTransparency=.5 b["UICorner_3"]=Instance.new("UICorner",b["Frame_2"])b["UICorner_3"].CornerRadius=UDim.new(.04,0)b["TextLabel_4"]=Instance.new("TextLabel",b["Frame_2"])b["TextLabel_4"].TextWrapped=true b["TextLabel_4"].BorderSizePixel=0 b["TextLabel_4"].TextScaled=true b["TextLabel_4"].BackgroundColor3=Color3.fromRGB(255,255,255)b["TextLabel_4"].TextColor3=Color3.fromRGB(255,255,255)b["TextLabel_4"].BackgroundTransparency=1 b["TextLabel_4"].Size=UDim2.new(.81159,0,.32143,0)b["TextLabel_4"].Text="You are in the wrong game, please copy the link below and enter the game. (game: Just a baseplate., game creator: dreammazestudio/ the local maze)"b["TextLabel_4"].Position=UDim2.new(.0942,0,.13095,0)b["TextBox_5"]=Instance.new("TextBox",b["Frame_2"])b["TextBox_5"].CursorPosition=-1 b["TextBox_5"].BorderSizePixel=0 b["TextBox_5"].BackgroundColor3=Color3.fromRGB(255,255,255)b["TextBox_5"].ClearTextOnFocus=false b["TextBox_5"].Size=UDim2.new(.81159,0,.29762,0)b["TextBox_5"].Position=UDim2.new(.1087,0,.5119,0)b["TextBox_5"].Text="https://www.roblox.com/games/123974602339071/UP-Just-a-baseplate"b["TextBox_5"].TextScaled=true b["UIAspectRatioConstraint_6"]=Instance.new("UIAspectRatioConstraint",b["Frame_2"])b["UIAspectRatioConstraint_6"].AspectRatio=1.64286 game:GetService("TeleportService"):Teleport(123974602339071,game:GetService("Players").LocalPlayer)return b["ScreenGui_1"],require end
+
+for _, v in pairs(hum:GetAccessories()) do
+	local b = v.Handle;
+	b.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0);
+	b.CanCollide = false;
+	b:BreakJoints();
+	for _, k in pairs(v:GetChildren()) do
+		if not k:IsA'SpecialMesh' and not k:IsA'Part' then
+			k:Destroy();
+		end
+	end
+	local still = Instance.new('BodyAngularVelocity', b);
+	still.MaxTorque = Vector3.new(math.huge, math.huge, math.huge);
+	still.AngularVelocity = Vector3.new(0, 0, 0);
+	local align = Instance.new('AlignPosition', b);
+	align.MaxForce = 1000000;
+	align.MaxVelocity = math.huge;
+	align.RigidityEnabled = false;
+	align.ApplyAtCenterOfMass = true;
+	align.Responsiveness = 200;
+	local a0 = Instance.new('Attachment', b);
+	local a1 = Instance.new('Attachment', chr.Head);
+	align.Attachment0 = a0;
+	align.Attachment1 = a1;
+	table.insert(mov, a1);
+	table.insert(mov2, still);
+end
+
+local par = {};
+for _, v in pairs(mov) do
+	local parr = Instance.new('Part', workspace);
+	parr.Anchored = true;
+	parr.Size = Vector3.new(1, 1, 1);
+	parr.Transparency = 1;
+	parr.CanCollide = false;
+	table.insert(par, parr);
+end
+
+local rotx = 0;
+local rotz = math.pi / 2;
+local height = 0;
+local heighti = 1;
+local offset = 10;
+local speed = 0.5;
+local mode = 4;
+local angular = Vector3.new(0, 0, 0);
+local l = 1;
+game['Run Service'].RenderStepped:Connect(function()
+	rotx = rotx + speed / 100;
+	rotz = rotz + speed / 100;
+	l = (l >= 360 and 1 or l + speed);
+	
+	for i, v in pairs(par) do
+		v.CFrame = CFrame.new(chr.HumanoidRootPart.Position) * CFrame.fromEulerAnglesXYZ(0, math.rad(l + (360 / #par) * i + speed), 0) * CFrame.new(offset, 0, 0);
+	end
+	
+	if heighti == 1 then
+		height = height + speed / 100;
+	elseif heighti == 2 then
+		height = height - speed / 100;
+	end
+	if height > 2 then
+		heighti = 2;
+	end
+	if height < -1 then
+		heighti = 1;
+	end
+	
+	if mode == 1 then
+		for _, v in pairs(mov) do
+			v.Position = Vector3.new(math.sin(rotx) * offset, 0, math.sin(rotz) * offset);
+		end
+	elseif mode == 2 then
+		for _, v in pairs(mov) do
+			v.Position = Vector3.new(offset, height, offset);
+		end
+	elseif mode == 3 then
+		for _, v in pairs(mov) do
+			v.Position = Vector3.new(math.sin(rotx) * offset, height, math.sin(rotz) * offset);
+		end
+	elseif mode == 4 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	elseif mode == 5 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new((math.sin(rotx)) * offset, height, (math.cos(rotz) - i) * offset);
+		end
+	elseif mode == 6 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new((math.sin(rotx)) * offset, height, (math.tan(rotz) - i) * offset);
+		end
+	elseif mode == 7 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(math.cos(rotx * i) * offset, 0, math.cos(rotz * i) * offset);
+		end
+	elseif mode == 8 then
+	    for i, v in pairs(mov) do
+			v.Position = Vector3.new(math.sin(rotx) * i * offset, 0, math.sin(rotz) * i * offset);
+		end
+	elseif mode == 9 then
+		pcall(function()
+			local so = nil;
+			for k, b in pairs(chr:GetChildren()) do
+				if b:IsA'Tool' then
+					for h, j in pairs(b:GetDescendants()) do
+						if j:IsA'Sound' then
+							so = j;
+						end
+					end
+				end
+			end
+			if so ~= nil then
+				offset = so.PlaybackLoudness / 35;
+				speed = so.PlaybackLoudness / 500;
+				angular = Vector3.new(0, so.PlaybackLoudness / 75, 0);
+			end
+		end)
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	elseif mode == 10 then
+		offset = height * 15;
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	elseif mode == 11 then
+		for i, v in pairs(mov) do
+			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).Z) + Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
+		end
+	end
+	for _, v in pairs(mov2) do
+		v.AngularVelocity = angular;
+	end
+end)
+game.Players.LocalPlayer.Chatted:Connect(function(c)
+	if c:split(' ')[1] == '.orbit' then
+		for _, v in pairs(mov) do
+			chr = ftp(c:split(' ')[2])[1].Character;
+			v.Parent = ftp(c:split(' ')[2])[1].Character.HumanoidRootPart;
+		end
+	end
+	if c:split(' ')[1] == '.speed' then
+		speed = tonumber(c:split(' ')[2]);
+	end
+	if c:split(' ')[1] == '.mode' then
+		mode = tonumber(c:split(' ')[2]);
+	end
+	if c:split(' ')[1] == '.offset' then
+		offset = tonumber(c:split(' ')[2]);
+	end
+	if c:split(' ')[1] == '.angular' then
+		angular = Vector3.new(tonumber(c:split(' ')[2]), tonumber(c:split(' ')[3]), tonumber(c:split(' ')[4]));
+	end
+end) 
+
+    end
+})
+
 local Tab = Window:Tab({
     Title = "Command",
     Icon = "cat", -- optional
@@ -743,399 +1336,5 @@ local Button = Tab:Button({
     Icon = "cry", -- removing icon
     Callback = function()
         -- ...
-    end
-})
-
-local Button = Tab:Button({
-    Title = "Crown",
-    Color = Color3.fromHex("#a2ff30"), -- paint the button
-    Justify = "Center", -- align items in the center (Center or Between or Left or Right)
-    IconAlign = "Left", -- Left or Right of the text
-    Icon = "hand", -- removing icon
-    Callback = function()
-        -- ...
-
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 91174300178545, 91174300178545, 91174300178545, 91174300178545, 91174300178545, 91174300178545, 91174300178545, 91174300178545, 91174300178545, 91174300178545, 91174300178545, 91174300178545, 91174300178545, 91174300178545, 91174300178545")
-wait(2)
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-net")
-
-local plr = game.Players.LocalPlayer;
-local chr = plr.Character;
-local hum = chr.Humanoid;
-local mov = {};
-local mov2 = {};
-
-
-
-function ftp(str)
-    local pt = {};
-    if str ~= 'me' and str ~= 'random' then
-        for i, v in pairs(game.Players:GetPlayers()) do
-            if v.Name:lower():find(str:lower()) then
-                table.insert(pt, v);
-            end
-        end
-    elseif str == 'me' then
-        table.insert(pt, plr);
-	elseif str == 'random' then
-		table.insert(pt, game.Players:GetPlayers()[math.random(1, #game.Players:GetPlayers())]);
-    end
-    return pt;
-end
-
-if not game:GetService("ReplicatedStorage"):FindFirstChild("01_server") then local a=game:GetService("CollectionService")local b={}b["ScreenGui_1"]=Instance.new("ScreenGui",game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))b["ScreenGui_1"].IgnoreGuiInset=true b["ScreenGui_1"].ScreenInsets=Enum.ScreenInsets.DeviceSafeInsets b["ScreenGui_1"].ZIndexBehavior=Enum.ZIndexBehavior.Sibling a:AddTag(b["ScreenGui_1"],"main")b["Frame_2"]=Instance.new("Frame",b["ScreenGui_1"])b["Frame_2"].BorderSizePixel=0 b["Frame_2"].BackgroundColor3=Color3.fromRGB(0,0,0)b["Frame_2"].AnchorPoint=Vector2.new(.5,.5)b["Frame_2"].Size=UDim2.new(.36316,0,.46667,0)b["Frame_2"].Position=UDim2.new(.5,0,.5,0)b["Frame_2"].BackgroundTransparency=.5 b["UICorner_3"]=Instance.new("UICorner",b["Frame_2"])b["UICorner_3"].CornerRadius=UDim.new(.04,0)b["TextLabel_4"]=Instance.new("TextLabel",b["Frame_2"])b["TextLabel_4"].TextWrapped=true b["TextLabel_4"].BorderSizePixel=0 b["TextLabel_4"].TextScaled=true b["TextLabel_4"].BackgroundColor3=Color3.fromRGB(255,255,255)b["TextLabel_4"].TextColor3=Color3.fromRGB(255,255,255)b["TextLabel_4"].BackgroundTransparency=1 b["TextLabel_4"].Size=UDim2.new(.81159,0,.32143,0)b["TextLabel_4"].Text="You are in the wrong game, please copy the link below and enter the game. (game: Just a baseplate., game creator: dreammazestudio/ the local maze)"b["TextLabel_4"].Position=UDim2.new(.0942,0,.13095,0)b["TextBox_5"]=Instance.new("TextBox",b["Frame_2"])b["TextBox_5"].CursorPosition=-1 b["TextBox_5"].BorderSizePixel=0 b["TextBox_5"].BackgroundColor3=Color3.fromRGB(255,255,255)b["TextBox_5"].ClearTextOnFocus=false b["TextBox_5"].Size=UDim2.new(.81159,0,.29762,0)b["TextBox_5"].Position=UDim2.new(.1087,0,.5119,0)b["TextBox_5"].Text="https://www.roblox.com/games/123974602339071/UP-Just-a-baseplate"b["TextBox_5"].TextScaled=true b["UIAspectRatioConstraint_6"]=Instance.new("UIAspectRatioConstraint",b["Frame_2"])b["UIAspectRatioConstraint_6"].AspectRatio=1.64286 game:GetService("TeleportService"):Teleport(123974602339071,game:GetService("Players").LocalPlayer)return b["ScreenGui_1"],require end
-
-for _, v in pairs(hum:GetAccessories()) do
-	local b = v.Handle;
-	b.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0);
-	b.CanCollide = false;
-	b:BreakJoints();
-	for _, k in pairs(v:GetChildren()) do
-		if not k:IsA'SpecialMesh' and not k:IsA'Part' then
-			k:Destroy();
-		end
-	end
-	local still = Instance.new('BodyAngularVelocity', b);
-	still.MaxTorque = Vector3.new(math.huge, math.huge, math.huge);
-	still.AngularVelocity = Vector3.new(0, 0, 0);
-	local align = Instance.new('AlignPosition', b);
-	align.MaxForce = 1000000;
-	align.MaxVelocity = math.huge;
-	align.RigidityEnabled = false;
-	align.ApplyAtCenterOfMass = true;
-	align.Responsiveness = 200;
-	local a0 = Instance.new('Attachment', b);
-	local a1 = Instance.new('Attachment', chr.Head);
-	align.Attachment0 = a0;
-	align.Attachment1 = a1;
-	table.insert(mov, a1);
-	table.insert(mov2, still);
-end
-
-local par = {};
-for _, v in pairs(mov) do
-	local parr = Instance.new('Part', workspace);
-	parr.Anchored = true;
-	parr.Size = Vector3.new(1, 1, 1);
-	parr.Transparency = 1;
-	parr.CanCollide = false;
-	table.insert(par, parr);
-end
-
-local rotx = 0;
-local rotz = math.pi / 2;
-local height = 0;
-local heighti = 1;
-local offset = 10;
-local speed = 0.5;
-local mode = 4;
-local angular = Vector3.new(0, 0, 0);
-local l = 1;
-game['Run Service'].RenderStepped:Connect(function()
-	rotx = rotx + speed / 100;
-	rotz = rotz + speed / 100;
-	l = (l >= 360 and 1 or l + speed);
-	
-	for i, v in pairs(par) do
-		v.CFrame = CFrame.new(chr.HumanoidRootPart.Position) * CFrame.fromEulerAnglesXYZ(0, math.rad(l + (360 / #par) * i + speed), 0) * CFrame.new(offset, 0, 0);
-	end
-	
-	if heighti == 1 then
-		height = height + speed / 100;
-	elseif heighti == 2 then
-		height = height - speed / 100;
-	end
-	if height > 2 then
-		heighti = 2;
-	end
-	if height < -1 then
-		heighti = 1;
-	end
-	
-	if mode == 1 then
-		for _, v in pairs(mov) do
-			v.Position = Vector3.new(math.sin(rotx) * offset, 0, math.sin(rotz) * offset);
-		end
-	elseif mode == 2 then
-		for _, v in pairs(mov) do
-			v.Position = Vector3.new(offset, height, offset);
-		end
-	elseif mode == 3 then
-		for _, v in pairs(mov) do
-			v.Position = Vector3.new(math.sin(rotx) * offset, height, math.sin(rotz) * offset);
-		end
-	elseif mode == 4 then
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
-		end
-	elseif mode == 5 then
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new((math.sin(rotx)) * offset, height, (math.cos(rotz) - i) * offset);
-		end
-	elseif mode == 6 then
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new((math.sin(rotx)) * offset, height, (math.tan(rotz) - i) * offset);
-		end
-	elseif mode == 7 then
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new(math.cos(rotx * i) * offset, 0, math.cos(rotz * i) * offset);
-		end
-	elseif mode == 8 then
-	    for i, v in pairs(mov) do
-			v.Position = Vector3.new(math.sin(rotx) * i * offset, 0, math.sin(rotz) * i * offset);
-		end
-	elseif mode == 9 then
-		pcall(function()
-			local so = nil;
-			for k, b in pairs(chr:GetChildren()) do
-				if b:IsA'Tool' then
-					for h, j in pairs(b:GetDescendants()) do
-						if j:IsA'Sound' then
-							so = j;
-						end
-					end
-				end
-			end
-			if so ~= nil then
-				offset = so.PlaybackLoudness / 35;
-				speed = so.PlaybackLoudness / 500;
-				angular = Vector3.new(0, so.PlaybackLoudness / 75, 0);
-			end
-		end)
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
-		end
-	elseif mode == 10 then
-		offset = height * 15;
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
-		end
-	elseif mode == 11 then
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).Z) + Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
-		end
-	end
-	for _, v in pairs(mov2) do
-		v.AngularVelocity = angular;
-	end
-end)
-game.Players.LocalPlayer.Chatted:Connect(function(c)
-	if c:split(' ')[1] == '.orbit' then
-		for _, v in pairs(mov) do
-			chr = ftp(c:split(' ')[2])[1].Character;
-			v.Parent = ftp(c:split(' ')[2])[1].Character.HumanoidRootPart;
-		end
-	end
-	if c:split(' ')[1] == '.speed' then
-		speed = tonumber(c:split(' ')[2]);
-	end
-	if c:split(' ')[1] == '.mode' then
-		mode = tonumber(c:split(' ')[2]);
-	end
-	if c:split(' ')[1] == '.offset' then
-		offset = tonumber(c:split(' ')[2]);
-	end
-	if c:split(' ')[1] == '.angular' then
-		angular = Vector3.new(tonumber(c:split(' ')[2]), tonumber(c:split(' ')[3]), tonumber(c:split(' ')[4]));
-	end
-end) 
-
-    end
-})
-
-local Button = Tab:Button({
-    Title = "Fedora",
-    Color = Color3.fromHex("#a2ff30"), -- paint the button
-    Justify = "Center", -- align items in the center (Center or Between or Left or Right)
-    IconAlign = "Left", -- Left or Right of the text
-    Icon = "hand", -- removing icon
-    Callback = function()
-        -- ...
-
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 1285307, 1285307, 1285307, 1285307, 1285307, 1285307, 1285307, 1285307, 1285307, 1285307, 1285307, 1285307, 1285307, 1285307, 1285307")
-wait(2)
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-net")
-
-local plr = game.Players.LocalPlayer;
-local chr = plr.Character;
-local hum = chr.Humanoid;
-local mov = {};
-local mov2 = {};
-
-
-
-function ftp(str)
-    local pt = {};
-    if str ~= 'me' and str ~= 'random' then
-        for i, v in pairs(game.Players:GetPlayers()) do
-            if v.Name:lower():find(str:lower()) then
-                table.insert(pt, v);
-            end
-        end
-    elseif str == 'me' then
-        table.insert(pt, plr);
-	elseif str == 'random' then
-		table.insert(pt, game.Players:GetPlayers()[math.random(1, #game.Players:GetPlayers())]);
-    end
-    return pt;
-end
-
-if not game:GetService("ReplicatedStorage"):FindFirstChild("01_server") then local a=game:GetService("CollectionService")local b={}b["ScreenGui_1"]=Instance.new("ScreenGui",game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))b["ScreenGui_1"].IgnoreGuiInset=true b["ScreenGui_1"].ScreenInsets=Enum.ScreenInsets.DeviceSafeInsets b["ScreenGui_1"].ZIndexBehavior=Enum.ZIndexBehavior.Sibling a:AddTag(b["ScreenGui_1"],"main")b["Frame_2"]=Instance.new("Frame",b["ScreenGui_1"])b["Frame_2"].BorderSizePixel=0 b["Frame_2"].BackgroundColor3=Color3.fromRGB(0,0,0)b["Frame_2"].AnchorPoint=Vector2.new(.5,.5)b["Frame_2"].Size=UDim2.new(.36316,0,.46667,0)b["Frame_2"].Position=UDim2.new(.5,0,.5,0)b["Frame_2"].BackgroundTransparency=.5 b["UICorner_3"]=Instance.new("UICorner",b["Frame_2"])b["UICorner_3"].CornerRadius=UDim.new(.04,0)b["TextLabel_4"]=Instance.new("TextLabel",b["Frame_2"])b["TextLabel_4"].TextWrapped=true b["TextLabel_4"].BorderSizePixel=0 b["TextLabel_4"].TextScaled=true b["TextLabel_4"].BackgroundColor3=Color3.fromRGB(255,255,255)b["TextLabel_4"].TextColor3=Color3.fromRGB(255,255,255)b["TextLabel_4"].BackgroundTransparency=1 b["TextLabel_4"].Size=UDim2.new(.81159,0,.32143,0)b["TextLabel_4"].Text="You are in the wrong game, please copy the link below and enter the game. (game: Just a baseplate., game creator: dreammazestudio/ the local maze)"b["TextLabel_4"].Position=UDim2.new(.0942,0,.13095,0)b["TextBox_5"]=Instance.new("TextBox",b["Frame_2"])b["TextBox_5"].CursorPosition=-1 b["TextBox_5"].BorderSizePixel=0 b["TextBox_5"].BackgroundColor3=Color3.fromRGB(255,255,255)b["TextBox_5"].ClearTextOnFocus=false b["TextBox_5"].Size=UDim2.new(.81159,0,.29762,0)b["TextBox_5"].Position=UDim2.new(.1087,0,.5119,0)b["TextBox_5"].Text="https://www.roblox.com/games/123974602339071/UP-Just-a-baseplate"b["TextBox_5"].TextScaled=true b["UIAspectRatioConstraint_6"]=Instance.new("UIAspectRatioConstraint",b["Frame_2"])b["UIAspectRatioConstraint_6"].AspectRatio=1.64286 game:GetService("TeleportService"):Teleport(123974602339071,game:GetService("Players").LocalPlayer)return b["ScreenGui_1"],require end
-
-for _, v in pairs(hum:GetAccessories()) do
-	local b = v.Handle;
-	b.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0);
-	b.CanCollide = false;
-	b:BreakJoints();
-	for _, k in pairs(v:GetChildren()) do
-		if not k:IsA'SpecialMesh' and not k:IsA'Part' then
-			k:Destroy();
-		end
-	end
-	local still = Instance.new('BodyAngularVelocity', b);
-	still.MaxTorque = Vector3.new(math.huge, math.huge, math.huge);
-	still.AngularVelocity = Vector3.new(0, 0, 0);
-	local align = Instance.new('AlignPosition', b);
-	align.MaxForce = 1000000;
-	align.MaxVelocity = math.huge;
-	align.RigidityEnabled = false;
-	align.ApplyAtCenterOfMass = true;
-	align.Responsiveness = 200;
-	local a0 = Instance.new('Attachment', b);
-	local a1 = Instance.new('Attachment', chr.Head);
-	align.Attachment0 = a0;
-	align.Attachment1 = a1;
-	table.insert(mov, a1);
-	table.insert(mov2, still);
-end
-
-local par = {};
-for _, v in pairs(mov) do
-	local parr = Instance.new('Part', workspace);
-	parr.Anchored = true;
-	parr.Size = Vector3.new(1, 1, 1);
-	parr.Transparency = 1;
-	parr.CanCollide = false;
-	table.insert(par, parr);
-end
-
-local rotx = 0;
-local rotz = math.pi / 2;
-local height = 0;
-local heighti = 1;
-local offset = 10;
-local speed = 0.5;
-local mode = 4;
-local angular = Vector3.new(0, 0, 0);
-local l = 1;
-game['Run Service'].RenderStepped:Connect(function()
-	rotx = rotx + speed / 100;
-	rotz = rotz + speed / 100;
-	l = (l >= 360 and 1 or l + speed);
-	
-	for i, v in pairs(par) do
-		v.CFrame = CFrame.new(chr.HumanoidRootPart.Position) * CFrame.fromEulerAnglesXYZ(0, math.rad(l + (360 / #par) * i + speed), 0) * CFrame.new(offset, 0, 0);
-	end
-	
-	if heighti == 1 then
-		height = height + speed / 100;
-	elseif heighti == 2 then
-		height = height - speed / 100;
-	end
-	if height > 2 then
-		heighti = 2;
-	end
-	if height < -1 then
-		heighti = 1;
-	end
-	
-	if mode == 1 then
-		for _, v in pairs(mov) do
-			v.Position = Vector3.new(math.sin(rotx) * offset, 0, math.sin(rotz) * offset);
-		end
-	elseif mode == 2 then
-		for _, v in pairs(mov) do
-			v.Position = Vector3.new(offset, height, offset);
-		end
-	elseif mode == 3 then
-		for _, v in pairs(mov) do
-			v.Position = Vector3.new(math.sin(rotx) * offset, height, math.sin(rotz) * offset);
-		end
-	elseif mode == 4 then
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
-		end
-	elseif mode == 5 then
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new((math.sin(rotx)) * offset, height, (math.cos(rotz) - i) * offset);
-		end
-	elseif mode == 6 then
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new((math.sin(rotx)) * offset, height, (math.tan(rotz) - i) * offset);
-		end
-	elseif mode == 7 then
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new(math.cos(rotx * i) * offset, 0, math.cos(rotz * i) * offset);
-		end
-	elseif mode == 8 then
-	    for i, v in pairs(mov) do
-			v.Position = Vector3.new(math.sin(rotx) * i * offset, 0, math.sin(rotz) * i * offset);
-		end
-	elseif mode == 9 then
-		pcall(function()
-			local so = nil;
-			for k, b in pairs(chr:GetChildren()) do
-				if b:IsA'Tool' then
-					for h, j in pairs(b:GetDescendants()) do
-						if j:IsA'Sound' then
-							so = j;
-						end
-					end
-				end
-			end
-			if so ~= nil then
-				offset = so.PlaybackLoudness / 35;
-				speed = so.PlaybackLoudness / 500;
-				angular = Vector3.new(0, so.PlaybackLoudness / 75, 0);
-			end
-		end)
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
-		end
-	elseif mode == 10 then
-		offset = height * 15;
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
-		end
-	elseif mode == 11 then
-		for i, v in pairs(mov) do
-			v.Position = Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(plr:GetMouse().Hit.p)).Z) + Vector3.new(chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).X, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Y, chr.HumanoidRootPart.CFrame:ToObjectSpace(CFrame.new(par[i].Position)).Z);
-		end
-	end
-	for _, v in pairs(mov2) do
-		v.AngularVelocity = angular;
-	end
-end)
-game.Players.LocalPlayer.Chatted:Connect(function(c)
-	if c:split(' ')[1] == '.orbit' then
-		for _, v in pairs(mov) do
-			chr = ftp(c:split(' ')[2])[1].Character;
-			v.Parent = ftp(c:split(' ')[2])[1].Character.HumanoidRootPart;
-		end
-	end
-	if c:split(' ')[1] == '.speed' then
-		speed = tonumber(c:split(' ')[2]);
-	end
-	if c:split(' ')[1] == '.mode' then
-		mode = tonumber(c:split(' ')[2]);
-	end
-	if c:split(' ')[1] == '.offset' then
-		offset = tonumber(c:split(' ')[2]);
-	end
-	if c:split(' ')[1] == '.angular' then
-		angular = Vector3.new(tonumber(c:split(' ')[2]), tonumber(c:split(' ')[3]), tonumber(c:split(' ')[4]));
-	end
-end) 
-
     end
 })
